@@ -6,19 +6,17 @@ const Animacion2 = () => {
 
   useEffect(() => {
     Animated.timing(animacion, {
-      toValue: 100,
+      toValue: 450,
       duration: 1000,
-      useNativeDriver: true,
+      useNativeDriver: false,
     }).start();
   }, [animacion]);
 
   return (
     <View>
       <Animated.View
-        style={[
-          styles.caja,
-          {transform: [{scaleX: animacion}, {scaleY: animacion}]},
-        ]}></Animated.View>
+        style={[styles.caja, {width: animacion, height: animacion}]}
+      />
     </View>
   );
 };

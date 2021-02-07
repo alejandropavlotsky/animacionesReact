@@ -9,13 +9,15 @@ import {
 } from 'react-native';
 import Animacion1 from './componens/Animacion1';
 import Animacion2 from './componens/Animacion2';
+import Animacion3 from './componens/Animacion3';
 
 const App = () => {
   return (
     <>
       <View style={styles.contenido}>
         {/* <Animacion1 /> */}
-        <Animacion2 />
+        {/* <Animacion2 /> */}
+        <Animacion3 />
       </View>
     </>
   );
